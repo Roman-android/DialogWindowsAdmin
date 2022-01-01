@@ -1,0 +1,10 @@
+.edit_text{
+    outline: none;
+    font-family: "Times New Roman", serif;
+    background-color: transparent;
+    width: auto;
+
+/*  width: 0;
+    min-width: auto;
+    flex-basis: 0;*/
+}

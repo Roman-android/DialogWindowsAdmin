@@ -1,0 +1,39 @@
+
+@import "public/aside.css";
+@import "public/navigation.css";
+@import "public/table.css";
+
+@import "admin/input_text.css";
+@import "admin/cover.css";
+
+@import "dialogs/text_dialog.css";
+
+@import "edit.css";
+@import "reset.css";
+
+body{
+    padding-top: 40px;
+}
+.content{
+    border: medium solid blue;
+    width: 95%;
+    margin: 0 auto;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.test_icon{
+    margin-top: 50px;
+    border: thin solid black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.material-icons.md-dark { color: rgb(18, 49, 160); }
+.material-icons.md-dark.md-inactive { color: rgba(18, 49, 160, 0.26); }
+.material-icons.md-36 { font-size: 36px; }

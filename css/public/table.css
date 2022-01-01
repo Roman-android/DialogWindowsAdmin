@@ -1,0 +1,17 @@
+.content_table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-right: 20px;
+}
+
+tr:hover{
+    background-color: blanchedalmond;
+}
+
+.content_table_item,.content_table td{
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+aside{
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 3px solid #A9A9A9;
+    border-radius: 10px;
+}
+
+/*с сайта https://myrusakov.ru/css3-accordion.html*/
+.accordion{
+    display: block;
+    white-space: nowrap;
+}
+.accordion input {
+    display: none;
+}
+.accordion_content {
+    display: none;
+    margin-left: 20px;
+}
+.accordion_header, .accordion_content a{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.accordion input:checked ~ .accordion_content {
+    display: block;
+}

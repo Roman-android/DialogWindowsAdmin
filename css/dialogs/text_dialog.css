@@ -1,0 +1,55 @@
+.dialog_edit{
+    text-transform: uppercase;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    min-width: 30%;
+    padding: 10px;
+}
+
+.dialog_body{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dialog_body section{
+
+}
+
+.dialog_body_items{
+    flex-grow: 1;
+}
+
+.dialog_body_actions{
+    flex-grow: 0;
+}
+
+.dialog_item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    font-size: 25px;
+}
+
+.button_group{
+    display: flex;
+    height: 40px;
+    justify-content:space-between;
+}
+
+.button_group>button{
+    border: 1px solid black;;
+    width: 48%;
+}
+
+.dialog_active{
+    background: orange;
+    border-color: blue;
+}
