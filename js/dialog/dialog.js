@@ -75,20 +75,29 @@ $(document).ready(function () {
              .always(function () {
                  /!*alert( "complete" );*!/
              });*/
+//=================================================
 
         $.post(
-            'php/dialogs/dialog.php',
-            {text: 'Текст'}
-        ).done(html => getHtml(html))
+            "php/dialogs/dialog.php",
+            {text: 'Текст из JS'}
+        )
+            .done(
+                data => getHtml(data)
+            )
             .fail(function () {
                     alert("error")
                 }
             )
 
-
     }
 
-    function getHtml(html) {
+    function getHtml(json_result) {
+
+        //======
+        let html = json_result['html']
+        alert(json_result['text'])
+        alert(json_result['post'])
+        //======
 
         item_click_counter++
         console.log('item_click_counter = ' + item_click_counter)
@@ -98,7 +107,6 @@ $(document).ready(function () {
         console.log('top_margin_dialog = ' + top_margin_dialog)
 
         $('body').append($(html));
-
 
         let dialog_edit = $('.dialog_edit')
         dialog_edit
